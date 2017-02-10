@@ -73,15 +73,11 @@
                     Добавить Пользователя
                 </button>
             </p>
-            <p>
-                <button type="button" class="btn btn-primary btn-lg">Добавить Авто</button>
-            </p>
         </div>
         <div class="col-md-9">
-            <h2>Hello!</h2>
             <div class="panel panel-default">
                 <!-- Default panel contents -->
-                <div class="panel-heading">Panel heading</div>
+                <div class="panel-heading">Пользователи</div>
                 <!-- Table -->
                 <table class="table table-bordered" id="usersTable">
                     <tr>
@@ -96,6 +92,9 @@
                             <td>${user.getName()}</td>
                             <td>${user.getAge()}</td>
                             <td>
+                                <a href="/auto?userId=${user.getId()}" role="button" class="btn btn-primary btn-sm">
+                                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Авто
+                                </a>
                                 <button data-id="${user.getId()}" type="button" class="btn btn-primary btn-sm remove-btn">
                                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Удалить
                                 </button>

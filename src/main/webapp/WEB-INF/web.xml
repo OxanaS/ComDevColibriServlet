@@ -12,17 +12,30 @@
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
+
     <servlet>
-        <servlet-name>mainServlet</servlet-name>
+        <servlet-name>MainServlet</servlet-name>
         <servlet-class>com.devcolibri.servlet.MainServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AutoServlet</servlet-name>
+        <servlet-class>com.devcolibri.servlet.AutoServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>mainServlet</servlet-name>
-        <url-pattern></url-pattern>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/</url-pattern>
         <url-pattern>/delete</url-pattern>
         <url-pattern>/add</url-pattern>
         <url-pattern>/update</url-pattern>
         <url-pattern>/get</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AutoServlet</servlet-name>
+        <url-pattern>/auto</url-pattern>
+        <url-pattern>/auto/delete</url-pattern>
+        <url-pattern>/auto/add</url-pattern>
+        <url-pattern>/auto/update</url-pattern>
+        <url-pattern>/auto/get</url-pattern>
     </servlet-mapping>
 </web-app>

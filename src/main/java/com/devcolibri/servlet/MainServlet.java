@@ -19,7 +19,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-public class MainServlet extends HttpServlet {
+public class MainServlet extends HttpServlet implements ServletRequestActions {
     Service service;
     @Override
     public void init() throws ServletException {
